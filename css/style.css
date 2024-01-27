@@ -1,0 +1,490 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+
+html{
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    line-height: 1.7;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* ############# utility classes ############## */
+.lg-heading{
+    font-size: 3rem;
+}
+.md-heading{
+    font-size: 2rem;
+}
+.text-red{
+    color: #e63946;
+}
+.text-white{
+    color: #f4f4f4;
+}
+.text-black{
+    color: #333;
+}
+.text-grey{
+    color: #555;
+    font-weight: 500;
+}
+
+.bg-dark{
+    background-image: radial-gradient( circle 815px at 23.4% -21.8%,  rgba(9,29,85,1) 0.2%, rgba(0,0,0,1) 100.2% );
+}
+.btn{
+    display: inline-block;
+    text-transform: uppercase;
+    padding: 0.4em 1em;
+    margin: 0.5em 0;
+    font-weight: 500;  
+}
+
+.btn-primary{
+    background-color: #f4f4f4;
+    border-radius: 100em;
+}
+.btn-primary:hover{
+    background-color: #ddd;
+}
+
+.btn-secondary{
+    border: 2px solid #e63946;
+    color: #e63946;
+    border-radius: 100em;
+}
+.btn-secondary:hover{
+    background-color: #f5eeed;
+}
+/* ###################### header styling ######################### */
+.header {
+    height: 95vh;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('../img/header-image.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    position: relative;
+}
+
+ul li{
+    list-style: none;
+}
+
+a{
+    font-size: 1.6rem;
+    text-decoration: none;
+}
+
+p , li{
+    font-size: 1.6rem;
+    margin-bottom: 0.5em;
+    letter-spacing: 0.15em;   
+}
+
+h1, h2, h3{
+    margin-bottom: 0.5em;
+    letter-spacing: 0.15em; 
+    font-weight: 500px;
+}
+
+
+/* ############### NavBAR ################### */
+.navbar {
+    /* border: 2px solid green; */
+    padding: 0.5rem;
+}
+
+.container{                     /* all element comes under center container*/
+    max-width: 1000px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.navbar .logo,.navbar a{
+    color: rgb(242, 234, 234);
+}
+
+.navbar a:hover{
+    border-bottom: 1px solid white;      
+}
+/* .navbar a{
+    padding-bottom: 0.3rem;
+} */
+.navbar .logo{
+    float: left;
+}
+
+.navbar .nav-items{
+    float: right;
+    margin: 1rem;
+}
+
+.navbar .nav-item{
+    display: inline-block;
+    padding: 1rem;
+    text-transform: uppercase;
+}
+
+.navbar::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+/* ################## Header-content #############333 */
+
+.header-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2));
+}
+
+
+.header-content h1{
+    /* text-size-adjust: 2rem; */
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.header-content p{
+    text-transform: uppercase;
+}
+/* ############################ Showcase / Explore-places Section Styling ################## */
+
+.showcase{
+    background-color: #ddd;  
+    padding: 9rem 0; 
+}
+
+.showcase .row{
+    height: 25rem;    
+}
+
+.row{
+    background-color: #f4f4f4;
+    box-shadow: 0px 0px 20px #403f3f4a;
+}
+
+.row1,.row2{
+    margin-bottom: 5em;
+}
+
+.row1 .img, .row2 .text{
+    float: left;
+    width: 50%;
+    height: 100%
+}
+
+.row2 .img, .row1 .text{
+    float: right;
+    width: 50%;
+    height: 100%;   
+}
+
+.row3 .img, .row3 .text{
+    float: left;
+    width: 50%;
+    height: 100%
+}
+
+.row::after{                              /* ask where use like row and after,before ? and propert also */
+    content: '';
+    display: block;
+    clear: both;
+}
+.row2 .text, .row1 .text, .row3 .text{
+    padding: 2em;
+}
+
+.showcase .row img{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;                             /* ask */
+}
+
+/* ######################## Feature box styling ########################## */
+
+.features{
+    padding: 5rem 0;
+}
+
+.box-wrapper{
+    box-shadow: 0px 0px 20px #403f3f85;
+}
+.box{
+    height: 25rem;
+    width: 33.333%;
+    float: left;
+    padding: 2rem;
+    text-align: center;
+    color: white;
+}
+ /* isko lgane ke bad hi bottom me margin bni */
+ 
+.box-wrapper::after{  
+    content: '';                    
+    display: block;
+    clear: both;
+}
+
+.box1, .box3{
+    background-image: radial-gradient( circle 815px at 23.4% -21.8%,  rgba(9,29,85,1) 0.2%, rgba(0,0,0,1) 100.2% );
+    /* background-color: #333; */
+}
+
+.box2{
+    background-image: radial-gradient( circle 860px at 11.8% 33.5%,  rgba(240,30,92,1) 0%, rgba(244,49,74,1) 30.5%, rgba(249,75,37,1) 56.1%, rgba(250,88,19,1) 75.6%, rgba(253,102,2,1) 100.2% );
+    ;
+}
+/* ################### Footer section styling ################### */
+
+.footer{
+    background-image: radial-gradient( circle 815px at 23.4% -21.8%,  rgba(9,29,85,1) 0.2%, rgba(0,0,0,1) 100.2% );
+    text-align: center;
+    color: white;
+    padding: 2rem;
+    text-transform: uppercase;
+}
+
+.social-media-links i{
+    margin: 1.3rem;
+}
+
+/* ############## About Page Styling #################### */
+
+.about{
+    padding: 3rem 0;
+}
+.about-heading{
+    /* border-bottom: 3px solid #e63946; */
+}
+
+.about .container h2{
+    font-size: 3rem;
+}
+
+.about-heading::after{     /*for making border >> bottom of about heading*/
+    content: '';
+    display: block;
+    clear: both;
+    border: 3px solid #e63946;
+    width: 80%;
+}
+
+/* ################################# about - wrapper ################## */
+
+.about-wrapper{
+    text-align: center;
+    /* border: 2px solid green; */
+    margin: 2rem;
+}
+
+.about-wrapper .left{
+    float: left;
+    width: 50%;    
+}
+
+.about-wrapper .right{
+    float: right;
+    width: 50%;
+    
+}
+
+.about-wrapper::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.about-wrapper p::before{
+    content: '\2713';
+    color: #e63946;
+    font-weight: bold;
+    padding-right: 1rem ;
+}
+
+/* ################ Count-Box Styling ######################### */
+
+.count-box{
+    margin: 2rem 0;
+    display: inline-block;
+    width: 100%;
+}
+
+.count{
+    
+    float: left;
+    width: 25%;
+    text-align: center;     
+}
+
+.count-box::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.count-box .count span{
+    color: #e63946;
+    font-weight: 700;
+}
+
+.count-box p{
+    color: #555;
+    font-weight: 700;
+    font-size: 2rem;
+    text-transform: capitalize;
+}
+
+/* ################### cta-banner styling ################## */
+
+.cta-banner{
+    background-image: radial-gradient( circle 860px at 11.8% 33.5%,  rgba(240,30,92,1) 0%, rgba(244,49,74,1) 30.5%, rgba(249,75,37,1) 56.1%, rgba(250,88,19,1) 75.6%, rgba(253,102,2,1) 100.2% );
+    ;
+}
+
+.cta-banner-left{
+    float: left;
+    color: white;
+    text-align: center;
+    margin: 3rem;
+    font-weight: 500;
+    padding-left: 2rem;
+}
+
+.cta-banner-right{
+    float: right;
+    color: white;
+    border: 2px solid whitesmoke;
+    border-radius: 8rem;
+    box-shadow: 0px 0px 15px #e63946;
+    text-align: center;
+    color: #ddd;
+    text-decoration: none;
+    margin: 1.5rem;
+    padding: 0 1rem;
+    padding-right: 2rem;
+    text-transform: uppercase;
+}
+
+.cta-banner::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/* #################### contact page details styling #####################3 */
+
+.contact-page{
+    background-color: #ddd;
+    padding: 3rem;
+}
+
+.company-details{
+    float: left;
+    width: 49%;
+    background-color: #fff;
+    box-shadow: 0px 0px 20px #fff;
+    padding: 1rem;
+    height: 680px;
+}
+
+.contact-box::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.contact-page .c-address i{
+    display: inline-block;
+    
+}
+.contact-page .c-address h2{
+    display: inline-block;
+    font-weight: 500;
+    font-size: 1.8em;
+    padding-left: 1rem;
+    text-transform: uppercase;
+    margin: 0.1em;
+    letter-spacing: 0.1em;
+
+}
+.contact-page .c-address p{
+    padding-left: 1rem;
+}
+
+.contact-page .c-address{
+    margin-bottom: 2rem;
+}
+
+.contact-page img{
+    max-width: 90%;
+    min-height: 30rem;
+    object-fit: cover;
+    object-position: left;
+}
+/* ################ contact page form styling ####################### */
+
+
+.contact-page .form-details{
+    float: right;
+    width: 49%;
+    background-color: #fff ;
+    box-shadow: 0px 0px 20px #fff;
+    font-size: 1.8rem;
+    padding: 1rem;
+    height: 680px;
+}
+
+.contact-page .form-details h1::after{
+    content: '';
+    display: block;
+    border: 3px solid #e63946;
+}
+
+.contact-page .form-details .form-row{
+    margin-bottom: 1.5rem;
+}
+.contact-page .form-details .form-row label{
+    display: block;
+}
+
+.contact-page .form-details .form-row input{
+    display: block;
+    width: 100%;
+}
+
+.contact-box .form-details label::after{
+    content: '*';
+    color: #e63946;
+}
+
+.contact-box textarea{
+    width: 100%;
+    height: 17rem;
+}
+
+.contact-box .form-details .form-btn{
+    display: block;
+    margin: 0 auto;
+    background-color: #e63946;
+    padding: 0.7em 4em;
+    text-transform: uppercase;
+    font-size: 1.8  rem;
+    color: #ddd;
+    cursor: pointer;
+    border: none;
+}
+
+.contact-box .form-details input{
+    padding: 0.7rem;
+}
